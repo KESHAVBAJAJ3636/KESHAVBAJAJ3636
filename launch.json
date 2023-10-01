@@ -1,0 +1,94 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+  {
+    "name": "WEB MVC",
+    "type": "coreclr",
+    "request": "launch",
+    "preLaunchTask": "build",
+    "program": "${workspaceFolder}/Web/WebMVC/bin/Debug/netcoreapp3.1/WebMVC.dll",
+    "args": [],
+    "cwd": "${workspaceFolder}/Web/WebMVC/",
+    "stopAtEntry": false,
+    "serverReadyAction": {
+      "action": "openExternally",
+      "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+    },
+    "env": {
+      "ASPNETCORE_ENVIRONMENT": "Development"
+    },
+    "sourceFileMap": {
+      "/Views": "${workspaceFolder}/Views"
+    }
+  },
+    {
+      "name": ".NET Core Launch Identity",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/Services/Identity/Identity.API/bin/Debug/netcoreapp3.1/Identity.API.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Services/Identity/Identity.API",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      }
+    },
+    {
+      "name": ".NET Core Launch Hotel",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/Services/Hotel/Hotel.API/bin/Debug/netcoreapp3.1/Hotel.API.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Services/Hotel/Hotel.API",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      }
+    },
+    {
+      "name": ".NET Core Launch Booking",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build",
+      "program": "${workspaceFolder}/Services/Booking/Booking.API/bin/Debug/netcoreapp3.1/Booking.API.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/Services/Booking/Booking.API",
+      "stopAtEntry": false,
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "sourceFileMap": {
+        "/Views": "${workspaceFolder}/Views"
+      }
+    },
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach",
+      "processId": "${command:pickProcess}"
+    }
+  ]
+}
